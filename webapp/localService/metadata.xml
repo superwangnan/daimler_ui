@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="PersonService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="Person" EntityType="PersonService.Person"/>
+            </EntityContainer>
+            <EntityType Name="Person">
+                <Key>
+                    <PropertyRef Name="userid"/>
+                </Key>
+                <Property Name="userid" Type="Edm.String" Nullable="false"/>
+                <Property Name="empid" Type="Edm.String"/>
+                <Property Name="username" Type="Edm.String"/>
+                <Property Name="fullname" Type="Edm.String"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
